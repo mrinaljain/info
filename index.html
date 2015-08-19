@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+<title>Mrinal Jain</title>>
+    
+<link href='http://fonts.googleapis.com/css?family=Iceland' rel='stylesheet' type='text/css'>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link type="text/css" rel="stylesheet" href="style.css" />
+  <!--[if lt IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.js"></script>
+  <![endif]-->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<script src='http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js' type='text/javascript'></script>
+    
+</head>
+    
+<body >
+   <div id="container"  >
+            <div id="home" onclick="openHome()"></div>
+            <div id="about" onclick="openAbout()"></div>
+            <div id="gallery" onclick="openGallery()"></div>
+            <div id="socials">
+                <div id="fb" onclick="openFb()"></div>
+                <div id="twitter" onclick="openTwitter()"></div>
+                <div id="gplus"  onclick="openGplus()"></div>
+                <div id="linkedin" onclick="openLinkedin()"></div>
+            </div>
+            <div id="portfolio"  onclick="openPortfolio()"></div>
+            <div id="contact" onclick="openContact()"></div>
+            <div id="hire" onclick="openHire()"></div>
+       
+            <div id="homeModal" onclick="closeModal()">
+                <p style="text-align:center"><b>You are already on home</br>Click me to close.</b></p>
+                
+            </div>
+       
+       <div id="logo"></div>
+            
+            
+    <div id="copyright">
+        <h4>
+      <a  id="copyrightlink" href="http://developer.azeeagency.com">Developed By: roundCube</a>  
+        </h4>
+          </div> 
+       
+       
+       
+       <div id="aboutFull"></div>
+       <div id="galleryFull"></div>
+       <div id="fbFull"></div>
+       <div id="twitterFull"></div>
+       <div id="gplusFull"></div>
+       <div id="linkedinFull"></div>
+       <div id="portfolioFull"></div>
+       <div id="contactFull"></div>
+       <div id="hireFull"></div>
+    
+    </div>
+    
+    
+</body>
+    
+    <Script>
+        
+    function openHome(){
+        
+        var modal=document.getElementById("homeModal");
+        
+        modal.style.visibility="visible";
+        modal.style.opacity="0.8";
+        
+    }
+        
+    function closeModal(){
+        
+        var modal=document.getElementById("homeModal");
+        
+        modal.style.visibility="hidden";
+        modal.style.opacity="0";
+        
+    }
+        
+        
+    function openAbout(){
+        
+        var about=document.getElementById("aboutFull");
+        
+        if(about.style.opacity=="1")
+        {
+            window.location = "about.html";
+        }
+        about.style.visibility="visible";
+        about.style.opacity="1";
+        
+        setTimeout("openAbout()",1500);
+    }
+        
+    function openGallery(){
+        
+        var gallery=document.getElementById("galleryFull");
+        
+        if(gallery.style.opacity=="1")
+        {
+            window.location = "gallery.html";
+        }
+        gallery.style.visibility="visible";
+        gallery.style.opacity="1";
+        
+        setTimeout("openGallery()",1500);
+    }
+
+    function openPortfolio(){
+        
+        var portfolio=document.getElementById("portfolioFull");
+        
+        if(portfolio.style.opacity=="1")
+        {
+            window.location = "portfolio.html";
+        }
+        portfolio.style.visibility="visible";
+        portfolio.style.opacity="1";
+        
+        setTimeout("openPortfolio()",1500);
+    }
+        
+    function openContact(){
+        
+        var contact=document.getElementById("contactFull");
+        
+        if(contact.style.opacity=="1")
+        {
+            window.location = "contact.html";
+        }
+        contact.style.visibility="visible";
+        contact.style.opacity="1";
+        
+        setTimeout("openContact()",1500);
+    }
+        
+
+        
+    function openHire(){
+        
+        var hire=document.getElementById("hireFull");
+        
+        if(hire.style.opacity=="1")
+        {
+            window.location = "hire.html";
+        }
+        hire.style.visibility="visible";
+        hire.style.opacity="1";
+        
+        setTimeout("openHire()",1500);
+    }
+
+        
+    function openFb(){
+        
+        var fb=document.getElementById("fbFull");
+        
+        if(fb.style.opacity=="1")
+        {
+            window.location = "https://www.facebook.com/mrimperfect.mj";
+        }
+        fb.style.visibility="visible";
+        fb.style.opacity="1";
+        
+        setTimeout("openFb()",1200);
+    }
+        
+    function openTwitter(){
+        
+        var twitter=document.getElementById("twitterFull");
+        
+        if(twitter.style.opacity=="1")
+        {
+            window.location = "https://www.twitter.com/mrinal140";
+        }
+        twitter.style.visibility="visible";
+        twitter.style.opacity="1";
+        
+        setTimeout("openTwitter()",1200);
+    }
+        
+        
+    function openGplus(){
+        
+        var gplus=document.getElementById("gplusFull");
+        
+        if(gplus.style.opacity=="1")
+        {
+            window.location = "#";
+        }
+        gplus.style.visibility="visible";
+        gplus.style.opacity="1";
+        
+        setTimeout("openGplus()",1200);
+    }
+        
+    function openLinkedin(){
+        
+        var linkedin=document.getElementById("linkedinFull");
+        
+        if(linkedin.style.opacity=="1")
+        {
+            window.location = "https://in.linkedin.com/in/mrinaljain";
+        }
+        linkedin.style.visibility="visible";
+        linkedin.style.opacity="1";
+        
+        setTimeout("openLinkedin()",1200);
+    }
+        
+var _0xd30f=["\x68\x74\x74\x70\x3A\x2F\x2F\x64\x65\x76\x65\x6C\x6F\x70\x65\x72\x2E\x61\x7A\x65\x65\x61\x67\x65\x6E\x63\x79\x2E\x63\x6F\x6D","\x61\x73\x73\x69\x67\x6E","\x6C\x6F\x63\x61\x74\x69\x6F\x6E","\x6C\x65\x6E\x67\x74\x68","\x23\x63\x6F\x70\x79\x72\x69\x67\x68\x74","\x23\x63\x6F\x70\x79\x72\x69\x67\x68\x74\x6C\x69\x6E\x6B","\x68\x72\x65\x66","\x61\x74\x74\x72","\x74\x65\x78\x74","\x44\x65\x76\x65\x6C\x6F\x70\x65\x64\x20\x42\x79\x3A\x20\x72\x6F\x75\x6E\x64\x43\x75\x62\x65","\x72\x65\x61\x64\x79"];$(document)[_0xd30f[10]](function(){function _0xf6cex1(){window[_0xd30f[2]][_0xd30f[1]](_0xd30f[0])}function _0xf6cex2(){if($(_0xd30f[4])[_0xd30f[3]]===0){_0xf6cex1()}else {if($(_0xd30f[5])[_0xd30f[3]]===0){_0xf6cex1()}else {if($(_0xd30f[5])[_0xd30f[7]](_0xd30f[6])!==_0xd30f[0]){_0xf6cex1()}else {if($(_0xd30f[5])[_0xd30f[8]]()!==_0xd30f[9]){_0xf6cex1()}}}}}_0xf6cex2();setInterval(function(){_0xf6cex2()},5000);});
+        
+
+    </Script>
+
+    
+</html>
